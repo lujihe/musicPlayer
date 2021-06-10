@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="link.css">
+    <script src="play.js"></script>
+    <title>music</title>
+</head>
+
+<body>
+    <div class="header">
+        <!-- logo部分 -->
+        <div class="logo">
+            <img src="images/4.jpg">
+        </div>
+        <!-- 导航栏部分 -->
+        <div class="nav_left">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">榜单</a></li>
+                <li><a href="#">歌手</a></li>
+                <li><a href="#">下载酷我客户端</a></li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <ul>
+                <li><a href="#">美女秀</a></li>
+                <li><a href="#">酷我耳机</a></li>
+                <li><a href="#">VIP会员</a></li>
+                <li><a href="#">i听</a></li>
+                <li><a href="#">更多服务</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">^</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <p>找到好音乐</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="words">
+            <h3>喜羊羊</h3>
+            <span>
+                <p>专辑：</p>
+                <p>儿童大全 </p>
+                <p>歌手: </p>
+                <p>华语群星 </p>
+                <p>分享 </p>
+                <img src="images/2.jpg">
+                <p>评论</p>
+            </span>
+            <span>上传时间：2015-10-02 歌曲来源：民大相思湖网球社</span>
+            <p class="br">———————————————————————————————————</p>
+            <div class="word">
+                <p>白云因为我变得柔软</p>
+                <p>别看我只是一只羊</p>
+                <p>羊儿的聪明难以想像</p>
+                <p>天再高心情一样奔放</p>
+                <p>每天都追赶太阳</p>
+                <p>有什么难题去牵绊我都不会去心伤</p>
+                <p>有什么危险在我面前也不会去慌乱</p>
+                <p>就算有狼群把我追捕也当做游戏一场</p>
+                <p>在什么时间都爱开心笑容都会飞翔</p>
+                <p>就算会摔倒站得起来永远不会沮丧</p>
+                <p>在所有天气拥有叫人大笑的力量</p>
+                <p>虽然我只是羊</p>
+                <p>喜羊羊美羊羊</p>
+            </div>
+        </div>
+
+        <audio autoplay="autoplay" id="mymusic">
+            <source src="别看我只是一只羊.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="pic">
+            <img src="images/1.jpg" class="circle" id='circle'>
+            <div class="process">
+                <div class="play" id='playbtn'></div>
+                <div id="prograssBar">
+                    <div id="wp_bufBar">
+                        <div class="prograssBar" id="wp_processBar"></div>
+                        <a href="##" class='schedule_btn' id='wp_processBtn'></a>
+                    </div>
+                </div>
+                <p id="wp_playTime" class="opacity">00:00</p>
+                <div class="sound" id="wp_mute"></div>
+            </div>
+            <button class="download">
+                <img src="images/13.png">
+                <span><a href="#">免费下载这首歌</a> </span>
+            </button>
+            <div class="talk">
+                <img src="images/17.bmp">
+                <div class="alls">
+                    <div class="part">
+                        <p>赵晓雯———H5</p>
+                        <p>🎵 喜羊羊与灰太狼 </p>
+                    </div>
+                    <p><a href="#"> 去现场 ></a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="comment_outer_block">
+        <div class="comment_block">
+            <h4>评论 &nbsp;&nbsp;<span id="comment_counts">1703条评论</span></h4>
+            <div class="comment_user_picture"></div>
+            <div class="comment_right_block">
+                <textarea name="user_comment_textarea" id="user_comment_textarea" placeholder="分享你的音乐见解"></textarea>
+                <div class="emoji_submit_btn_block">
+                    <span class="comment_emoji"></span>
+                    <span class="comment_words">已输入<p id="count">0</p> 个字</span>
+                    <button type="submit" id="comment_submit_btn">评论</button>
+                </div>
+            </div>
+            <p class="great_comments_title">精彩评论</p>
+            <ul class="great_comments_block"></ul>
+        </div>
+        <ul class="paging_block">
+            <li class="prev_page_btn" id="prev_page_btn">＞</li>
+            <li class="first_page" id="first_page">1</li>
+            <li class="second_page" id="second_page">2</li>
+            <li class="third_page" id="third_page">3</li>
+            <li class="ellipsis_page" id="ellipsis_page">···</li>
+            <li class="last_page" id="last_page"></li>
+            <li class="next_page_btn" id="next_page_btn">＞</li>
+        </ul>
+    </div>
+</body>
+
+</html>

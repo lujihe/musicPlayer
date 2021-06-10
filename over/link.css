@@ -1,0 +1,514 @@
+*{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style: none;
+}
+a{
+    color: black;
+	text-decoration: none;
+}
+body{
+    background-color: rgb(250, 248, 248);
+}
+.header{
+    display: flex;
+	height: 50px;
+	margin: 0 auto;
+    background-color: black;
+}
+.logo{
+    width: 106px;
+    height: 50px;
+    margin-left: 100px;
+}
+.nav_left,
+.nav_right{
+    margin-left: 40px;
+}
+.nav_left>ul,
+.nav_right>ul{
+    display: flex;
+}
+.nav_left>ul>li,
+.nav_right>ul>li{
+    width: 50px;
+    height: 50px;
+    margin-left: 18px;
+    line-height: 50px;
+}
+.nav_left>ul>li:nth-child(4){
+    width: 115px;
+}
+.nav_left>ul>li>a
+{
+    color: white;
+}
+.nav_left>ul>li:nth-child(1)>a
+{
+    color: rgb(233,160,20);
+}
+.nav_right>ul>li>a{
+    font-size: 14px;
+    color: rgb(187,187,187);
+}
+.nav_right>ul>li{
+    width: 70px;
+    height: 23px;
+    margin-top: 13px;
+    line-height: 23px;
+    padding-left: 18px;
+    background: url(images/3.png)no-repeat;
+    background-position: -230px -22px;
+}
+
+
+.nav_right>ul>li:nth-child(5){
+    margin-left: 10px;
+    background: none;
+}
+.nav_right>ul>li:nth-child(4){
+   width:20px;
+}
+.nav_right>ul>li:nth-child(6),
+.nav_right>ul>li:nth-child(7){
+    margin-left: 10px;
+    width: 35px;
+    background: none;
+}
+.nav_right>ul>li:nth-child(5)>a,
+.nav_right>ul>li:nth-child(6)>a,
+.nav_right>ul>li:nth-child(7)>a{
+    color: white;
+}
+.search>p{
+    width: 200px;
+    padding-left: 20px;
+   line-height: 50px;
+   color: rgb(119, 121, 112);
+   font-size: 11px;
+   background: url(images/5.png)no-repeat;
+   background-position: 0px 13px;
+}
+/* 歌词部分 */
+.content{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 250px;
+    width: 1100px;
+    height: 550px;
+}
+.words{
+    width: 600px;
+    height: 550px;
+}
+h3{
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.words >span{
+    font-size: 14px;
+    display: flex;
+    margin-left: 165px;
+    margin-bottom: 10px;
+}
+.words>span>img{
+    margin-right: 10px;
+}
+.words>span>p{
+    margin-right: 20px;
+}
+.words>span>p:nth-child(even){
+    color: rgb(250, 198, 131);
+}
+.words>span>p:nth-child(7){
+    color: rgb(250, 198, 131);
+}
+.word{
+    margin-top: 10px;
+}
+.word>P{
+    border-right:3px solid rgb(223, 223, 220);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.br{
+    color: rgb(212, 211, 211);
+}
+.word>p:nth-child(6){
+    color: rgb(250, 198, 131);
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.pic{
+    width: 500px;
+    height: 700px;
+}
+.circle{
+    border: 1px solid rgb(221, 219, 219);
+    padding: 2px;
+    margin-top: 10px;
+    margin-left: 170px;
+    border-radius: 50% ;
+  /*   animation: liujingao 5s linear infinite; */
+}
+.process{
+    margin-top: 20px;
+    display: flex;
+    margin-left: 20px;
+}
+/* 播放按钮 */
+.play{
+    cursor:pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: 60px;
+    margin-top: 10px;
+/*     border: 1px solid red; */
+    background: url(images/7.png) no-repeat;
+    background-size:cover;
+}
+/* 进度条 */
+#prograssBar{
+  /*   border: 1px solid red; */
+    position: relative;
+    width: 250px;
+    height: 4px;
+    margin-top: 28px;
+    margin-left: 10px;
+    display: inline;
+    background-color: rgb(235, 233, 233);
+}
+#wp_bufBar{
+    width: 5px;
+    height: 4px;
+    background: url(images/9.png);
+}
+.prograssBar{
+    height: 4px;
+    background-color: #ffcd2d;
+}
+#wp_processBtn{
+    width: 10px;
+    height: 10px;
+    background: url(images/10.png);
+    background-size: cover;
+    position: absolute;
+    top: -3px;
+}
+.opacity{
+    margin-top: 18px;
+    margin-left: 10px;
+    color: #bbbbbb;
+}
+.sound{
+    cursor: pointer;
+    width:20px;
+    height: 16px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background: url(images/11.png)no-repeat;
+    background-size: cover;
+}
+.download{
+    display: flex;
+    border: none;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 50px;
+    margin-left: 150px;
+    border-radius: 7%;
+    background-color: #585890;
+    color: black;
+}
+.download>img{
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.download>span{
+    margin-left: 25px;
+}
+.download>span>a:hover{
+    color: white;
+}
+.comment{
+    margin-top: 30px;
+    margin-left: 250px;
+    width: 1100px;
+    height: 750px;
+/*     border: 1px solid red; */
+}
+.talk{
+/*     border: 1px solid red; */
+    margin-top: 20px;
+    width: 500px;
+    height: 100px;
+    display: flex;
+}
+.talk>img{
+    margin-top: 25px;
+    margin-left: 90px;
+    width: 60px;
+    height: 60px;
+}
+.talk>.alls{
+    margin-left: 5px;
+    margin-top: 27px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    background: url(images/19.png);
+    background-size: cover;
+}
+.part>p:nth-child(1){
+    margin-left: 20px;
+    margin-top: 7px;
+    color: rgb(142, 142, 155);
+    font-size: 11px;
+}
+.part>p:nth-child(2){
+    margin-left: 20px;
+    margin-top: 3px;
+    font-size: 12px;
+    color: rgb(75, 80, 97);
+}
+.alls>p{
+    margin-left: 16px;
+    margin-top: 26px;
+    font-size: 9px;
+}
+.alls>p{
+    color: purple;
+}
+.comment_outer_block {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.comment_block {
+    width: 800px;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.comment_block h4 {
+    line-height: 40px;
+    font-size: 18px;
+    text-indent: 20px;
+    font-weight: normal;
+    border-bottom: 2px solid #ccc;
+}
+
+.comment_block h4 span {
+    font-size: 12px;
+}
+
+.comment_user_picture {
+    float: left;
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    background-image: url(./images/17.bmp);
+    background-size: 100%;
+}
+
+.comment_right_block {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 720px;
+    height: 200px;
+}
+
+#user_comment_textarea {
+    width: 100%;
+    height: 150px;
+    outline: none;
+    resize: none;
+    font-size: 15px;
+    line-height: 2em;
+    text-indent: 10px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.emoji_submit_btn_block {
+    position: relative;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.comment_emoji {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(./images/emoji.png);
+    background-position: 0 -115px;
+}
+
+.comment_words {
+    display: flex;
+    width: 80px;
+    font-size: 12px;
+    margin-top: -17px;
+    margin-left: 530px;
+}
+
+#comment_submit_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    border: 0;
+    line-height: 40px;
+    background-color: orange;
+    color: white;
+}
+
+#comment_submit_btn:hover {
+    cursor: pointer;
+}
+
+.great_comments_block {
+    border-top: 2px solid #ccc;
+}
+
+.great_comments_block li {
+    padding-top: 20px;
+    overflow: hidden;
+    border-bottom: 2px dotted #ccc;
+}
+
+.great_comments_title {
+    line-height: 60px;
+    text-indent: 20px;
+    font-size: 18px;
+}
+
+.great_comments_block li>div {
+    float: left;
+}
+
+.great_comments_user_picture {
+    width: 60px;
+    height: 60px;
+    background-image: url(./images/6.jpg);
+    background-size: 100%;
+}
+
+.great_comments_host_picture {
+    background-image: url(./images/17.bmp);
+}
+
+.li_comments_right_block {
+    position: relative;
+    width: 720px;
+    margin-left: 20px;
+}
+
+.li_comments_right_block h1 {
+    font-size: 16px;
+    color: orange;
+    font-weight: normal;
+}
+
+.li_comments_right_block h1 span {
+    float: right;
+    content: "分享";
+    color: black;
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+.li_comments_right_block h2 {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 25px;
+    padding: 10px 0;
+}
+
+.li_comments_right_block h3 {
+    float:left;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 1.6em;
+}
+
+.li_comments_right_block h3 span {
+    margin-left: 470px;
+    float: right;
+    content: "回复";
+    font-size: 14px;
+}
+
+.thumbs_up_picture {
+    position: absolute;
+    bottom: 18px;
+    right: 45px;
+    width: 15px;
+    height: 20px;
+    background-image: url(./images/thumbs_up.png);
+    background-position: -150px 0;
+}
+
+.thumbs_up_count {
+    position: absolute;
+    bottom: 20px;
+    right: 75px;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+
+.delete_comment {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 110px;
+    font-size: 15px;
+}
+
+.paging_block {
+    margin: 20px auto;
+    height: 50px;
+    width: 500px;
+}
+
+.paging_block li {
+    cursor: pointer;
+    float: left;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 50%;
+    margin: 0 10px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.prev_page_btn {
+    transform: rotate(180deg);
+}
+
+.paging_block .first_page {
+    background-color: orange;
+    color: white;
+}
